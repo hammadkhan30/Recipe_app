@@ -10,13 +10,14 @@ class CategoriesScreen extends StatelessWidget {
         title: Text("Seek Recipe"),
       ),
       body: GridView(
+        padding: const EdgeInsets.all(15),
         children: DUMMY_CATEGORIES
             .map((catData) => CategorieItem(catData.title, catData.color))
             .toList(),
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
           maxCrossAxisExtent: 200,
           childAspectRatio: 3 / 2,
-          crossAxisSpacing: 20,
+          crossAxisSpacing: 15,
           mainAxisSpacing: 20,
         ),
       ),
