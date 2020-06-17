@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './view/home_page.dart';
+import './view/categories_screen.dart';
 
 void main() => runApp(RecipeApp());
 
@@ -8,7 +8,7 @@ class RecipeApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Recipes",
-      home: HomePage(),
+      home: CategoriesScreen(),
     );
   }
 }
