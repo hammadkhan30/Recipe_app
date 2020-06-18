@@ -2,16 +2,17 @@ import 'package:flutter/material.dart';
 import '../view/categorie_meals_screen.dart';
 
 class CategorieItem extends StatelessWidget {
+  final String id;
   final String title;
   final Color color;
 
-  CategorieItem(this.title, this.color);
+  CategorieItem(this.id,this.title, this.color);
 
   void selectCategorie(BuildContext ctx) {
     Navigator.of(ctx).push(
       MaterialPageRoute(
         builder: (_) {
-          return CategorieMealsScreen();
+          return CategorieMealsScreen(id,title);
         },
       ),
     );
