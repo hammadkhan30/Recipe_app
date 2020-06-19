@@ -6,15 +6,15 @@ class CategorieItem extends StatelessWidget {
   final String title;
   final Color color;
 
-  CategorieItem(this.id,this.title, this.color);
+  CategorieItem(this.id, this.title, this.color);
 
   void selectCategorie(BuildContext ctx) {
-    Navigator.of(ctx).push(
-      MaterialPageRoute(
-        builder: (_) {
-          return CategorieMealsScreen(id,title);
-        },
-      ),
+    Navigator.of(ctx).pushNamed(
+      '/categories',
+      arguments: {
+        'id': id,
+        'title': title,
+      },
     );
   }
 

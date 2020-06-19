@@ -1,5 +1,5 @@
 import 'dart:ui';
-
+import './view/categorie_meals_screen.dart';
 import 'package:flutter/material.dart';
 import './view/categories_screen.dart';
 
@@ -29,6 +29,9 @@ class RecipeApp extends StatelessWidget {
         ),
       ),
       home: CategoriesScreen(),
+      routes: {
+        '/categories': (ctx) => CategorieMealsScreen(),
+      },
     );
   }
 }
