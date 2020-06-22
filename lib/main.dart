@@ -2,6 +2,7 @@ import 'dart:ui';
 import './view/categorie_meals_screen.dart';
 import 'package:flutter/material.dart';
 import './view/categories_screen.dart';
+import './view/meal_detail.dart';
 
 void main() => runApp(RecipeApp());
 
@@ -31,6 +32,7 @@ class RecipeApp extends StatelessWidget {
       home: CategoriesScreen(),
       routes: {
         '/categories': (ctx) => CategorieMealsScreen(),
+        MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
       },
     );
   }
