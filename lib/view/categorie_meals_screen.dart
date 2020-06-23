@@ -3,6 +3,7 @@ import '../Model/original .dart';
 import '../controller/meal_item.dart';
 
 class CategorieMealsScreen extends StatelessWidget {
+  static const routeName = '/categorie-meals';
   @override
   Widget build(BuildContext context) {
     final routeArgs =
